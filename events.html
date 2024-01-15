@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="j7.css">
+        <style>
+            #all-events {
+                margin-top: 15%;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+            .date {
+                border: 2px solid lightblue;
+                float: left;
+
+                /*spacing*/
+                height: 110px;
+                width: 100px;
+                margin-right: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .event-day {
+                border-top: 1px solid black;
+            }
+
+            .event-day::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .smaller-date {
+                font-size: 11px;
+                color: darkgray;
+
+                text-align: center;
+            }
+
+            .larger-day {
+                font-size: 22px;
+                color: darkgoldenrod;
+                margin: 0;
+
+                text-align: center;
+            }
+
+            a {
+                color: #934e00;
+                text-decoration: none;
+                transition-duration: 0.5s;
+            }
+
+            a:hover {
+                color: darkgoldenrod;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <a href="home-page.html"><img src="logo.png" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 10px; grid-column-start: 1; grid-column-end: 2; padding-left: 10px;"></a>
+            <div class="nav-link">
+                <a href="images.html" style="margin-left: 50px; margin-right: 50px;">images</a>
+                <a href="events.html" style="margin-left: 50px; margin-right: 50px;">events</a>
+            </div>
+        </div>
+        <div id="all-events">
+            <div class="event-day" id="most-recent"> <!--date element, css should stay in events.html-->
+                <div class="date">
+                    <p class="smaller-date">DEC</p>
+                    <p class="larger-day">16</p>
+                    <p class="smaller-date">SATURDAY</p>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Mo9QwAVEk7Y&t=2037s" target="_blank"><h2>Holiday Fun Scrimmage: J7 vs. J7 Families</h2></a>
+                    <a href="https://www.youtube.com/watch?v=RhMB8rViCW0" target="_blank"><h2>BAM Tournament: J7 vs. Lady Legends White</h2></a>
+                    <a href="https://www.youtube.com/watch?v=gFTeGjurSxk" target="_blank"><h2>BAM Tournament: J7 vs. Lady Legends Purple</h2></a>
+                </div>
+            </div>
+            <div class="event-day">
+                <div class="date">
+                    <p class="smaller-date">DEC</p>
+                    <p class="larger-day">9</p>
+                    <p class="smaller-date">SATURDAY</p>
+                </div>
+                <div>
+                    <a href="https://youtu.be/PB6zSNZkY0k" target="_blank"><h2>BAM Tournament: J7 vs. TVB 12u</h2></a>
+                    <a href="https://youtu.be/tqem-nFqw8Y" target="_blank"><h2>BAM Tournament: J7 vs. Vipers 12u</h2></a>
+                </div>
+            </div>
+            <div class="event-day">
+                <div class="date">
+                    <p class="smaller-date">NOV</p>
+                    <p class="larger-day">19</p>
+                    <p class="smaller-date">SUNDAY</p>
+                </div>
+                <div>
+                    <a href="https://youtu.be/MVrxUvfiL2E" target="_blank"><h2>BAM Tournament: JavSteps 13-14U</h2></a>
+                    <a href="https://youtu.be/tKPHsDRl_aI" target="_blank"><h2>BAM Tournament: Team United 13-14U</h2></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jaguars 7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .parallax {
+                    /*background-image: url("team-photo.jpg");*/
+                    background-color: #D9C5A3;
+                    min-height: 600px; 
+
+                    background-attachment: fixed;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            } 
+    
+            .heading {
+                color: orange;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                text-align: center;
+            }
+
+            body, html {
+                height: 100%;
+                background-color: #fdf5e2;
+            }
+
+            #nav-bar {
+                background-color: #D9C5A3;
+                position: fixed; 
+                top: 0;
+                display: grid; 
+                grid-template-columns: 1fr 24fr;
+                box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+                background-size: cover;
+                background-position: top;
+
+                overflow: hidden;
+            }
+
+            .nav-link {
+                margin-top: auto;
+                margin-bottom: auto;
+
+                grid-column-start: 2;
+                grid-column-end: 3;
+                text-align: right;
+
+                font-size: 1.2rem;
+
+                position: relative;
+            }
+
+            .nav-link a {
+                font-family: 'Nunito', sans-serif;
+                text-decoration: none;
+                color: #100938;
+            }
+
+            .nav-link a:hover {
+                color: #c06a2f;
+                transition-duration: 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav-bar">
+            <a href="home-page.html"><img src="logo.png" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 10px; grid-column-start: 1; grid-column-end: 2; padding-left: 10px;"></a>
+            <div class="nav-link">
+                <a href="images.html" style="margin-left: 50px; margin-right: 50px;">images</a>
+                <a href="events.html" style="margin-left: 50px; margin-right: 50px;">events</a>
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <div style="height: 300px;">
+            <h1 class="heading" style="margin: 0; padding-bottom: 0; padding-top: 30px;">Jaguars 7</h1>
+        </div>
+    </body>
+</html>
+
+<!--design ideas: https://n8n.io/features/-->
